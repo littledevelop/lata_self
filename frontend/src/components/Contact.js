@@ -21,7 +21,7 @@ const Contact = () => {
         setStatus('sending');
     
         try {
-          const response = await axios.post('http://localhost:5000/api/contact', formData, {
+          const response = await axios.post('https://lata-self.onrender.com/api/contact', formData, {
           headers: {
             'Content-Type': 'application/json',
           },

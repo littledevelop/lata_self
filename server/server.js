@@ -26,6 +26,11 @@ mongoose.connect(process.env.MONGODB_URI, {
 });
 
 app.use(express.static(path.join(_dirname, '/frontend/build')));
+const corsOptions = {
+  origin:"https://lata-self.onrender.com",
+  credential:true,
+}
+app.use(cors(corsOptions));
 app.get('*', (_, res) => {
   res.sendFile(path.resolve(_dirname, "frontend","build","index.html"));
 });
