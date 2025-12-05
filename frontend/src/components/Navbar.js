@@ -11,7 +11,7 @@ const Navbar = () => {
     { key: '1', label: 'Home', icon: <FaHtml5 /> },
     { key: '2', label: 'About', icon: <LaptopOutlined /> },
     { key: '3', label: 'Projects', icon: <UploadOutlined /> },
-    { key: '4', label: 'Contact', icon: <FileOutlined /> },
+    // { key: '4', label: 'Contact', icon: <FileOutlined /> },
     { key: '5', label: 'Blog', icon: <FileOutlined /> },
   ];
 
